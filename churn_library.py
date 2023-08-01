@@ -152,7 +152,7 @@ def perform_feature_engineering(data_frame, response):
         'Card_Category_Churn']
     data_frame = encoder_helper(data_frame, cat_columns, response)
 
-    x_s = pd.data_frame()
+    x_s = pd.DataFrame()
     y_s = data_frame[response]
     x_s[keep_cols] = data_frame[keep_cols]
     # train test split
